@@ -1,3 +1,4 @@
+from flask import Flask, render_template, request, redirect, url_for
 import sqlite3
 
 # 1. Create connection to db 
@@ -19,5 +20,3 @@ def index():
     conn.close()
     return products
 
-
-new_inv = index()
